@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+.logo img{
+    height: 60px;
+}
+.logo{
+    background-color: #c8eeff;
+    width: 8%;
+    text-align: center;
+    border-radius: 10px;
+}
+.main_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    padding: 5px;
+    background-color: #00aeff;
+    position: sticky;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.left_bar {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    color: crimson;
+    height: 100vh;
+    gap: 20px;
+    align-items: center;
+    background-color: #c8eeff;
+    justify-content:center ;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.left_bar li {
+    list-style: none;
+    background: rgb(255, 206, 216);
+    font-size: 30px;
+    font-family: cursive;
+    border-radius: 4px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    transition: ease 0.1s;
+}
+.left_bar li:hover{
+    cursor: pointer;
+    transition: ease 0.1s;
+    background-color: crimson;
+    color: #fff;
+}
+
+.items_container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    width: 80%;
+    background: #f1ecec;
+}
+.image_name{
+    font-family: cursive;
+    color: rgb(0, 0, 80);
+    font-weight: 550;
+    font-size: 16px;
+}
+.product_container {
+    width: 25%;
+    height: 65vh;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+}
+.image {
+    width: 180px;
+    height: 230px;
+    border-radius: 10px;
+}
+.image_rate{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+}
+.image_content{
+    text-align: left; 
+    padding: 0px 20px;  
+    display: flex;
+    flex-direction: column;
+}
+.menu_list{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 50px;
+}
+.menu_list li {
+    list-style: none;
+    width: 100px;
+    background-color: #c8eeff;
+    text-align: center;
+    color: crimson;
+    font-family: cursive;
+    padding: 10px;
+    font-weight: 600;
+
+    border-radius: 20px;
+}
+.cart{
+    width: 6%;
+    background-color: #c8eeff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.cart_button{
+    background: rgb(255, 206, 216);
+    color: crimson;
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    bottom: 20px;
+    right: 70px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.cart_button:hover{
+    cursor: pointer;
+}
+.cart_container{
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    /* background-color: #d4f1ca; */
+}
+.cart_table{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.head_row, .row2{
+    display: flex;
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+.head_row th{
+    padding: 10px;
+}
+.head_row th:nth-child(1){
+    width: 10%;
+    /* background-color: #99ace1; */
+}
+.head_row th:nth-child(2){
+    width: 70%;
+    /* background-color: #e199d9; */
+}
+.head_row th:nth-child(3){
+    width: 10%;
+    /* background-color: #e1d399; */
+}
+.head_row th:nth-child(4){
+    width: 10%;
+    /* background-color: #e1d399; */
+}
+.row2 td, .head_row th{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.row2 td:nth-child(1){
+    width: 10%;
+    /* background-color: #99ace1; */
+}
+.row2 td:nth-child(1) img{
+    width: 70px;
+    height: 60px;
+}
+.row2 td:nth-child(2){
+    width: 70%;
+   text-align: center;
+}
+.row2 td:nth-child(3){
+    width: 10%;
+    /* background-color: #e1d399; */
+}
+.row2 td:nth-child(4){
+    width: 10%;
+    
+}
+.row2 td:nth-child(4) i{
+    width: 10%;
+    color: rgb(234, 0, 0);
+    font-size: 30px;
+    background-color: pink;
+    width: 30px;
+}
+.cart_page{
+    display: none;
+}
